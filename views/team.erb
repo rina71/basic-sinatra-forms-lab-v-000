@@ -6,6 +6,9 @@
  </head>
  <body>
    <p><%="#{@team_name}"%></p>
+   <p><%@team_array.each do |team|%></p>
+     <h2><%=team%></h2>
+     <%end%>
 
 
  </body>
