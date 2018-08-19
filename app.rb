@@ -8,7 +8,7 @@ class App < Sinatra::Base
   post '/team' do
     @team_name = params[:name]
     @team_array = [params[:coach], params[:pg], params[:sg], params[:pf], params[:sf], params[:c]]
-
+    "#{@team_name}"
     erb :team
   end
 
